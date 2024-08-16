@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <title>Basketball Score App</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="score" id="score_left">
+                <h3>HOME</h3>
+                <div class="score_display">
+                    <p class="score_number" id="home_score">0</p>
+                </div>
+                <button onclick="home_1_point()">+1</button>
+                <button onclick="home_2_point()">+2</button>
+                <button onclick="home_3_point()">+3</button>
+            </div>
+            <div class="score" id="score_right">
+                <h3>GUEST</h3>
+                <div class="score_display">
+                    <p class="score_number" id="guest_score">0</p>
+                </div>
+                <button onclick="guest_1_point()">+1</button>
+                <button onclick="guest_2_point()">+2</button>
+                <button onclick="guest_3_point()">+3</button>
+            </div>
+        </div>
+        <div id="reset_box">
+            <button id="reset" onclick="reset()">Reset</button>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
